@@ -1,0 +1,584 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+html {
+  font-size: 100%;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #444;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+
+/* --- ヘッダー --- */
+.header {
+  width: 100%;
+  height: 130px;
+}
+.header .wrapper {
+  position: relative;
+}
+/* --- ヘッダーロゴ --- */
+.header-logo {
+  width: 263px;
+  position: absolute;
+  top: 29px;
+  left: 21px;
+}
+/* --- ヘッダーインフォ --- */
+.header-info {
+  position: absolute;
+  top: 37px;
+  right: 11px;
+}
+.header-info p {
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+.tel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tel a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #21A937;
+  margin-left: 14.8px;
+}
+.tel a:hover {
+  opacity: 1;
+}
+.tel li {
+  line-height: 24px;
+}
+.tel img {
+  width: 24.36px;
+}
+
+/* --- ホーム --- */
+#home {
+  background-image: url(images/home@2x_tiny.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 59.1875rem;
+  position: relative;
+}
+.home-copy {
+  position: absolute;
+  top: 14%;
+  left: 11%;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+.box {
+  font-size: 1.75rem;
+  background-color: #fff;
+  width: 102px;
+  height: 565px;
+  line-height: 3.7;
+  letter-spacing: .3rem;
+  padding-top: 25px;
+  display: inline-block;
+}
+.home-copy-left {
+  margin-right: 80px;
+}
+.home-copy-left span {
+  color: #21a937;
+}
+
+/* --- コンセプト --- */
+.concept-box {
+  margin: 162px 0 82px 0;
+  display: flex;
+  justify-content: center;
+}
+.concept-box img {
+  width: 100%;
+  max-width: 690px;
+  height: auto;
+}
+.concept-text {
+  width: 420px;
+  margin-right: 49px;
+}
+.concept-text-top {
+  margin-top: 38px;
+  margin-bottom: 40px;
+}
+.concept-text-bottom {
+  margin-bottom: 46px;
+}
+.ttl {
+  font-size: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block;
+  background: linear-gradient(transparent 70%, #99E5A5 20%);
+}
+.concept-text p {
+  font-size: 1rem;
+  line-height: 2.375;
+}
+
+/* --- 治療内容とお知らせ --- */
+#detail-news {
+  text-align: center;
+  background-color: #F5FCF8;
+  padding-top: 87px;
+}
+.detail-ttl {
+  margin-bottom: 36px;
+}
+.detail-ttl h2 {
+  margin-bottom: 77px;
+}
+.detail-ttl p {
+  font-weight: normal;
+}
+
+/* --- 治療内容 --- */
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-box {
+  background-color: #fff;
+  width: 380px;
+  height: 591px;
+  border: 1px solid #C9C9C9;
+  border-radius: 10px;
+  padding: 47px 30px 0;
+  position: relative;
+}
+.detail-box-ttl {
+  font-size: 1.5rem;
+}
+.detail-box figure {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.detail-box img {
+  width: 187px;
+}
+.detail-box h2 {
+  background-color: #fff;
+  margin-bottom: 48px;
+}
+.detail-box p {
+  font-size: 1rem;
+}
+/* --- お知らせ --- */
+.news {
+  padding-top: 89px;
+  padding-bottom: 112PX;
+}
+.news .ttl {
+  margin-bottom: 74px;
+}
+.news-contents {
+  box-shadow: 0 3px 6px #707070;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 1180px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 27px 63.5px 0 68.5px;
+}
+.news-contents dt {
+  display: inline-block;
+  color: #21A937;
+  margin-right: 34px;
+}
+.news-contents dd {
+  display: inline-block;
+  margin-left: 28px;
+  color: #444;
+}
+.news-content-item {
+  border-bottom: 2px solid #E7E7E7;
+  padding-top: 24.5px;
+  padding-bottom: 20.5px;
+}
+.news-cat {
+  color: #fff;
+  background-color: #444;
+  font-size: 12px;
+  display: inline-block;
+  width: 79px;
+  height: 25px;
+  text-align: center;
+  line-height: 2.1;
+}
+.news-content-link {
+  text-align: right;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.news-show {
+  color: #444;
+}
+.news-show:after {
+  content: "\025b6";
+  display: inline-block;
+  padding-left: 4px;
+}
+
+/* --- インフォメーション --- */
+#information {
+  height: 612px;
+  padding-top: 172px;
+}
+.information-box {
+  display: flex;
+}
+
+/* --- 地図 --- */
+.information-map {
+  width: 52%;
+}
+iframe {
+  width: 100%;
+}
+
+/* --- お問い合わせと営業時間 --- */
+.information-contact-time {
+  margin-top: 14px;
+  margin-left: 35px;
+  width: 44%;
+}
+
+/* --- お問い合わせ --- */
+.information-contact {
+  margin-bottom: 34px;
+}
+.information-logo {
+  padding-bottom: 30px;
+  width: 263px;
+}
+.information-contact pre {
+  font-weight: normal;
+  margin-bottom: 31px;
+}
+/* --- 電話発信 --- */
+.information-contact .tel {
+  justify-content: flex-start;
+}
+/* --- 営業時間 --- */
+.information-time {
+  border-top: 2px solid #E7E7E7;
+  border-bottom: 2px solid #E7E7E7;
+  width: 100%;
+  max-width: 533px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 14px;
+}
+.information-time-box1 {
+  display: flex;
+}
+.information-time-box1 p {
+  width: 85px;
+}
+.information-day1 dl {
+  display: flex;
+  margin-bottom: 19px;
+}
+.information-day1 dd {
+  padding-left: 23px;
+}
+.information-day1 {
+  border-left: 2px solid #E7E7E7;
+  padding-left: 29px;
+  margin-bottom: 20px;
+}
+.information-day1 dl:last-child {
+  margin-bottom: 0px;
+}
+.under-line {
+  background: linear-gradient(transparent 70%, #99E5A5 20%);
+}
+.information-time-box2 {
+  display: flex;
+}
+.information-time-box2 p {
+  width: 85px;
+}
+.information-day2 {
+  border-left: 2px solid #E7E7E7;
+  padding-left: 29px;
+}
+
+/* --- フッター --- */
+.footer {
+  height: 187px;
+  text-align: right;
+}
+.footer p small {
+  font-size: 0.6875rem;
+}
+
+@media (max-width: 1180px) {
+  .wrapper {
+    width: 96%;
+  }
+  /* --- コンセプトボックス --- */
+  .concept-box {
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 62px;
+  }
+  .concept-text {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  /* --- 治療内容とお知らせ --- */
+  .detail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-box {
+    height: 440px;
+    width: 70%;
+  }
+  .detail-box + .detail-box {
+    margin-top: 30px;
+  }
+  /* --- お知らせ --- */
+
+  .news-contents dd {
+    display: block;
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+
+  /* --- インフォメーション --- */
+  #information {
+    padding-top: 82px;
+  }
+  /* --- インフォメーションボックス --- */
+  #information {
+    height: auto;
+  }
+  .information-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* --- お問い合わせと営業時間 --- */
+  .information-contact-time {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 46%;
+  }
+  
+  /* --- お問い合わせ --- */
+  .information-contact {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .information-logo {
+    margin: 0 auto;
+  }
+  /* --- 電話発信 --- */
+  .information-contact .tel {
+    justify-content: center;
+  }
+  .imformation-map {
+    width: 100%;
+  }
+
+  /* --- 営業時間 --- */
+  .information-time-box1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information-time-box1 p,
+  .information-time-box2 p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .information-day1 dl {
+    flex-direction: column;
+    align-items: center;
+  }
+  .under-line {
+    margin-bottom: 5px;
+  }
+  .information-day1 dd {
+    padding-left: 0;
+  }
+  .information-time-box2 {
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #E7E7E7;
+    padding-top: 20px;
+  }
+  .information-day1,
+  .information-day2 {
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: ;
+  }
+  .information-time {
+    margin: 20px 0;
+  }
+
+  /* --- フッター --- */
+  .footer {
+    height: 120px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  /* --- ヘッダー --- */
+  .header {
+    width: 100%;
+    height: 140px;
+  }
+
+  /* --- ヘッダーロゴ --- */
+  .header-logo {
+    width: 180px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* --- ヘッダーインフォ --- */
+  .header-info {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  .header-info p {
+    margin-bottom: 10px;
+  }
+  .tel {
+    justify-content: center;
+  }
+  .tel a {
+    font-size: 1.25rem;
+    margin-left: 12.284px;
+  }
+  .tel img {
+    width: 20.2188px;
+    vertical-align: bottom;
+  }
+  /* --- ホーム --- */
+  #home {
+    height: 36rem;
+  }
+  .home-copy {
+    top: 14%;
+    left: 8%;
+  }
+  .box {
+    font-size: 1.375rem;
+    width: 60px;
+    height: 430px;
+    line-height: 2.7;
+    letter-spacing: .38rem;
+    padding-top: 16px;
+  }
+  .home-copy-left {
+    margin-right: 25px;
+  }
+
+  .concept-box {
+    margin-top: 32px;
+  }
+  .concept-text-top {
+    margin-top: 32px;
+    margin-bottom: 36px;
+  }
+  .concept-text-bottom {
+    margin-bottom: 40px;
+  }
+  .ttl {
+    font-size: 1.25rem;
+  }
+  .detail-box {
+    width: 100%;
+    height: 440px;
+  }
+  .detail-box-ttl {
+    font-size: 1.25rem;
+  }
+  .detail-box p {
+    font-size: 0.875rem;
+  }
+  .concept-text {
+    width: 100%;
+    max-width: 380px;
+  }
+  .concept-text p {
+    font-size: 0.875rem;
+  }
+  .news-contents {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 0.875rem;
+  }
+
+  /* --- インフォメーションボックス --- */
+  .information-map {
+    width: 100%;
+  }
+  
+  .information-logo {
+    width: 180px;
+  }
+  .information-contact pre {
+    font-size: 0.875rem;
+  }
+
+
+  /* --- お問い合わせと営業時間 --- */
+  .information-contact-time {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 98%;
+    text-align: center;
+  }
+  .information-time {
+    max-width: 100%;
+  }
+
+}
